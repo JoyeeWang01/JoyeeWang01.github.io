@@ -14,7 +14,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
       photo.style.width = "";
       return;
     }
-    const h = text.offsetHeight * 0.9;
+    const h = text.offsetHeight * 0.945;
     photo.style.height = h + "px";
     photo.style.width = (h * 4) / 5 + "px";
   }
@@ -76,7 +76,7 @@ const io = new IntersectionObserver(
 revealTargets.forEach((el) => io.observe(el));
 
 // Active nav tracking
-const sections = document.querySelectorAll("section[id]");
+const sections = document.querySelectorAll("section[id], header[id]");
 const navLinks = document.querySelectorAll(".nav-links a");
 const navObs = new IntersectionObserver(
   (entries) => {

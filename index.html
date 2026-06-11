@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -28,10 +29,10 @@
 
         <div class="prose hero-prose">
           <p>
-            I am a fourth&#8209;year PhD candidate at <strong>Stanford University</strong>, advised by <a href="https://web.stanford.edu/~bayati/" target="_blank" rel="noopener">Prof. Mohsen Bayati</a>. My research focuses on reinforcement learning, optimization algorithms, and LLM applications. I am especially excited about advancing AI models and translating them into real&#8209;world impact.
+            I am a fourth&#8209;year PhD candidate at <strong>Stanford University</strong>, advised by <a href="https://web.stanford.edu/~bayati/" target="_blank" rel="noopener">Prof. Mohsen Bayati</a>. My research focuses on reinforcement learning, optimization algorithms, and LLM applications. I am especially excited about advancing AI models and translating them into real&#8209;world impact. I believe that&rsquo;s where their true value lies, and we have so much more to explore.
           </p>
           <p>
-            Before Stanford, I earned my B.S. in Operations Research: Financial Engineering from <strong>Columbia University</strong>, graduating <em>summa cum laude</em> and receiving the <strong>Sebastian B. Littauer Award</strong>. I have also been fortunate to work with <a href="https://web.stanford.edu/~sidford/" target="_blank" rel="noopener">Prof. Aaron Sidford</a> and <a href="https://stanford.edu/~saberi/" target="_blank" rel="noopener">Prof. Amin Saberi</a> at Stanford, and with <a href="https://www.columbia.edu/~dano/" target="_blank" rel="noopener">Prof. Daniel Bienstock</a> and <a href="https://www.columbia.edu/~gi10/" target="_blank" rel="noopener">Prof. Garud Iyengar</a> at Columbia.
+            Before Stanford, I earned my B.S. in Operations Research: Financial Engineering from <strong>Columbia University</strong>, graduating <em>summa cum laude</em> and receiving the Sebastian B. Littauer Award. I have also been fortunate to work with <a href="https://web.stanford.edu/~sidford/" target="_blank" rel="noopener">Prof. Aaron Sidford</a> and <a href="https://stanford.edu/~saberi/" target="_blank" rel="noopener">Prof. Amin Saberi</a> at Stanford, and with <a href="https://www.columbia.edu/~dano/" target="_blank" rel="noopener">Prof. Daniel Bienstock</a> and <a href="https://www.columbia.edu/~gi10/" target="_blank" rel="noopener">Prof. Garud Iyengar</a> at Columbia.
           </p>
           <p>
             In my free time, I enjoy traveling, golf, tennis, and board games.
@@ -52,7 +53,7 @@
       <p class="collab-label">Open to Connect</p>
       <h2 class="collab-headline">Let&rsquo;s build <em>something</em>.</h2>
       <p class="collab-line">
-        I&rsquo;m always happy to connect, especially about AI, research, startups, or related opportunities. Feel free to <a class="collab-email" href="mailto:jyw@stanford.edu">reach out</a>!
+        I&rsquo;m always happy to chat, especially about AI, research, startups, or related opportunities. Feel free to <a class="collab-email" href="mailto:jyw@stanford.edu">reach out</a>!
       </p>
       <ul class="socials socials-large" aria-label="Connect with Joyee">
         <li>
@@ -89,86 +90,159 @@
         </p>
 
         <ol class="papers">
-          <li class="paper">
-            <div class="paper-line">
-              <span class="paper-year">2026</span>
-              <span class="paper-venue">Under Review</span>
+          <li class="paper paper--with-image">
+            <div class="paper-main">
+              <div class="paper-line">
+                <span class="paper-year">2026</span>
+                <span class="paper-venue">Under Review</span>
+              </div>
+              <h3 class="paper-title">
+                <a href="https://arxiv.org/pdf/2508.01956" target="_blank" rel="noopener">
+                  Scaling Clinician&#8209;Grade Feature Generation from Clinical Notes with Multi&#8209;Agent Language Models
+                </a>
+              </h3>
+              <p class="paper-authors"><strong>Jiayi Wang</strong>, Jacqueline Jil Vallon, Neil Panjwani, Xi Ling, Margaret Redfield, Sushmita Vij, Sandy Srinivas, John Leppert, Mohsen Bayati, Mark K. Buyyounouski</p>
+              <div class="paper-actions">
+                <a href="https://arxiv.org/pdf/2508.01956" target="_blank" rel="noopener">PDF &rarr;</a>
+                <a href="https://github.com/JoyeeWang01/SNOW-Scalable-Note-to-Outcome-Workflow" target="_blank" rel="noopener">Code &rarr;</a>
+              </div>
             </div>
-            <h3 class="paper-title">
-              <a href="https://arxiv.org/pdf/2508.01956" target="_blank" rel="noopener">
-                Scaling Clinician&#8209;Grade Feature Generation from Clinical Notes with Multi&#8209;Agent Language Models
-              </a>
-            </h3>
-            <p class="paper-authors"><strong>Jiayi Wang</strong>, Jacqueline Jil Vallon, Neil Panjwani, Xi Ling, Margaret Redfield, Sushmita Vij, Sandy Srinivas, John Leppert, Mohsen Bayati, Mark K. Buyyounouski</p>
-            <div class="paper-actions">
-              <a href="https://arxiv.org/pdf/2508.01956" target="_blank" rel="noopener">PDF &rarr;</a>
-              <a href="https://github.com/JoyeeWang01/SNOW-Scalable-Note-to-Outcome-Workflow" target="_blank" rel="noopener">Code &rarr;</a>
-            </div>
+            <aside class="paper-aside paper-aside--image">
+              <img src="images/cfg_snow_figure.png" alt="SNOW workflow figure for the multi-agent clinical pipeline" />
+            </aside>
           </li>
 
-          <li class="paper awarded">
-            <div class="paper-line">
-              <span class="paper-year">2026</span>
-              <span class="paper-venue">ALT</span>
-              <span class="paper-award">&#9733; Elegant Paper Award</span>
+          <li class="paper awarded paper--with-image">
+            <div class="paper-main">
+              <div class="paper-line">
+                <span class="paper-year">2026</span>
+                <span class="paper-venue">ALT</span>
+                <span class="paper-award">&#9733; Elegant Paper Award</span>
+              </div>
+              <h3 class="paper-title">
+                <a href="https://arxiv.org/pdf/2509.02526" target="_blank" rel="noopener">
+                  Reusing Samples in Variance Reduction
+                </a>
+              </h3>
+              <p class="paper-authors">Yujia Jin*, Ishani Karmarkar*, Aaron Sidford*, <strong>Jiayi Wang*</strong></p>
+              <div class="paper-actions">
+                <a href="https://arxiv.org/pdf/2509.02526" target="_blank" rel="noopener">PDF &rarr;</a>
+              </div>
             </div>
-            <h3 class="paper-title">
-              <a href="https://arxiv.org/pdf/2509.02526" target="_blank" rel="noopener">
-                Reusing Samples in Variance Reduction
-              </a>
-            </h3>
-            <p class="paper-authors">Yujia Jin*, Ishani Karmarkar*, Aaron Sidford*, <strong>Jiayi Wang*</strong></p>
-            <div class="paper-actions">
-              <a href="https://arxiv.org/pdf/2509.02526" target="_blank" rel="noopener">PDF &rarr;</a>
-            </div>
+            <aside class="paper-aside paper-aside--image">
+              <img src="images/new_approach.png" alt="Diagram of the new sample-reuse approach in variance reduction" />
+            </aside>
           </li>
 
-          <li class="paper">
-            <div class="paper-line">
-              <span class="paper-year">2025</span>
-              <span class="paper-venue">Under Review</span>
+          <li class="paper paper--full-eq">
+            <div class="paper-main">
+              <div class="paper-line">
+                <span class="paper-year">2026</span>
+                <span class="paper-venue">EC</span>
+              </div>
+              <h3 class="paper-title">
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5558342" target="_blank" rel="noopener">
+                  Endogenous Entry in Networked Markets with Production and Edge Capacity Constraints
+                </a>
+              </h3>
+              <p class="paper-authors">Cheng Guo, <strong>Jiayi Wang</strong>, Ozan Candogan</p>
+              <div class="paper-actions">
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5558342" target="_blank" rel="noopener">SSRN &rarr;</a>
+              </div>
             </div>
-            <h3 class="paper-title">
-              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5558342" target="_blank" rel="noopener">
-                Endogenous Entry in Networked Markets with Production and Edge Capacity Constraints
-              </a>
-            </h3>
-            <p class="paper-authors">Cheng Guo, <strong>Jiayi Wang</strong>, Ozan Candogan</p>
-            <div class="paper-actions">
-              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5558342" target="_blank" rel="noopener">SSRN &rarr;</a>
-            </div>
+            <aside class="paper-aside">
+              <p class="aside-caption">Equation 7 &middot; convex Cournot equilibrium</p>
+              <span class="formula" data-display="true">
+\begin{aligned}
+\max_{\mathbf{y}}\;\; & \sum_{m \in \mathcal{M}}\!\Big[\sum_{i \in \mathcal{F}}\Big(A_m - \tfrac{1}{2}B_m\!\!\sum_{j \in \mathcal{F},\,j\neq i}\!\!q_{jm}\Big)q_{im} - \sum_{i \in \mathcal{F}}\Big(B_m q_{im}^2 + \!\!\sum_{\delta \in \lambda(i,m)}\!\!C_\delta^T x_\delta\Big)\Big] - \sum_{i \in \mathcal{F}} f_i^C\!\Big(\!\sum_{m \in \mathcal{M}}\!q_{im}\!\Big) \\
+\text{s.t.}\;\; & q_{im} = \!\!\sum_{\delta \in \lambda(i,m)}\!\! x_\delta && (4a) \\
+& \sum_{\delta \ni i} x_\delta \leq Q_i^{\text{firm}} && (4b) \\
+& x_\delta \geq 0 && (4c) \\
+& \underline{Q}_{kl}^{\text{edge}} \leq \!\!\sum_{\delta \in \rho(k,l)}\!\! x_\delta - \!\!\sum_{\delta \in \rho(l,k)}\!\! x_\delta \leq \overline{Q}_{kl}^{\text{edge}} && (4g\text{-}4h)
+\end{aligned}
+              </span>
+            </aside>
           </li>
 
-          <li class="paper">
-            <div class="paper-line">
-              <span class="paper-year">2024</span>
-              <span class="paper-venue">NeurIPS</span>
+          <li class="paper paper--with-image">
+            <div class="paper-main">
+              <div class="paper-line">
+                <span class="paper-year">2024</span>
+                <span class="paper-venue">NeurIPS</span>
+              </div>
+              <h3 class="paper-title">
+                <a href="https://arxiv.org/pdf/2405.12952" target="_blank" rel="noopener">
+                  Truncated Variance&#8209;Reduced Value Iteration
+                </a>
+              </h3>
+              <p class="paper-authors">Yujia Jin*, Ishani Karmarkar*, Aaron Sidford*, <strong>Jiayi Wang*</strong></p>
+              <div class="paper-actions">
+                <a href="https://arxiv.org/pdf/2405.12952" target="_blank" rel="noopener">PDF &rarr;</a>
+              </div>
             </div>
-            <h3 class="paper-title">
-              <a href="https://arxiv.org/pdf/2405.12952" target="_blank" rel="noopener">
-                Truncated Variance&#8209;Reduced Value Iteration
-              </a>
-            </h3>
-            <p class="paper-authors">Yujia Jin*, Ishani Karmarkar*, Aaron Sidford*, <strong>Jiayi Wang*</strong></p>
-            <div class="paper-actions">
-              <a href="https://arxiv.org/pdf/2405.12952" target="_blank" rel="noopener">PDF &rarr;</a>
-            </div>
+            <aside class="paper-aside paper-aside--table">
+              <p class="aside-caption">Table 1 &middot; runtimes for <span class="caption-keep-case">&#x03B5;</span>-optimal policies</p>
+              <table class="aside-table">
+                <thead>
+                  <tr><th>Algorithm</th><th>Runtime</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Value Iteration</td>
+                    <td><span class="formula">\widetilde{O}\bigl(\text{nnz}(\mathbf{P})(1-\gamma)^{-1}\bigr)</span></td>
+                  </tr>
+                  <tr>
+                    <td>Empirical QVI</td>
+                    <td><span class="formula">\widetilde{O}\bigl(\text{nnz}(\mathbf{P}) + \mathcal{A}_{\text{tot}}(1-\gamma)^{-3}\varepsilon^{-2}\bigr)</span></td>
+                  </tr>
+                  <tr>
+                    <td>Randomized Primal&#8209;Dual Method</td>
+                    <td><span class="formula">\widetilde{O}\bigl(\text{nnz}(\mathbf{P}) + E\,\mathcal{A}_{\text{tot}}(1-\gamma)^{-4}\varepsilon^{-2}\bigr)</span></td>
+                  </tr>
+                  <tr>
+                    <td>High Precision Variance&#8209;Reduced Value Iteration</td>
+                    <td><span class="formula">\widetilde{O}\bigl(\text{nnz}(\mathbf{P}) + \mathcal{A}_{\text{tot}}(1-\gamma)^{-3}\bigr)</span></td>
+                  </tr>
+                  <tr class="this-paper">
+                    <td><strong>Algorithm 4 (This Paper)</strong></td>
+                    <td><span class="formula">\widetilde{O}\bigl(\text{nnz}(\mathbf{P}) + \mathcal{A}_{\text{tot}}(1-\gamma)^{-2}\bigr)</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </aside>
           </li>
 
-          <li class="paper">
-            <div class="paper-line">
-              <span class="paper-year">2024</span>
-              <span class="paper-venue">IEEE TEMPR</span>
+          <li class="paper paper--full-eq">
+            <div class="paper-main">
+              <div class="paper-line">
+                <span class="paper-year">2024</span>
+                <span class="paper-venue">IEEE TEMPR</span>
+              </div>
+              <h3 class="paper-title">
+                <a href="https://arxiv.org/pdf/2311.17254.pdf" target="_blank" rel="noopener">
+                  Risk&#8209;Aware Security&#8209;Constrained Unit Commitment
+                </a>
+              </h3>
+              <p class="paper-authors">Daniel Bienstock*, Yury Dvorkin*, Cheng Guo*, Robert Mieth*, <strong>Jiayi Wang*</strong></p>
+              <div class="paper-actions">
+                <a href="https://arxiv.org/pdf/2311.17254.pdf" target="_blank" rel="noopener">PDF &rarr;</a>
+              </div>
             </div>
-            <h3 class="paper-title">
-              <a href="https://arxiv.org/pdf/2311.17254.pdf" target="_blank" rel="noopener">
-                Risk&#8209;Aware Security&#8209;Constrained Unit Commitment
-              </a>
-            </h3>
-            <p class="paper-authors">Daniel Bienstock*, Yury Dvorkin*, Cheng Guo*, Robert Mieth*, <strong>Jiayi Wang*</strong></p>
-            <div class="paper-actions">
-              <a href="https://arxiv.org/pdf/2311.17254.pdf" target="_blank" rel="noopener">PDF &rarr;</a>
-            </div>
+            <aside class="paper-aside">
+              <p class="aside-caption">Equation 11 &middot; risk-aware SCUC problem</p>
+              <span class="formula" data-display="true">
+\begin{aligned}
+\min\;\; & \sum_{t \in \mathcal{T}^{\text{DA}}} \Big(\sum_{g \in \mathcal{G}}(h_{gt} + C_g^{\text{Start}} v_{gt} + C_g^{\text{Down}} w_{gt}) + \sum_{i \in \mathcal{N}} C^{\text{VOLL}} p_{it}^{\text{Unmet}}\Big) + \rho\,\hat{V}(\mathbf{y}) \\
+\text{s.t.}\;\; & h_{gt} \geq C_{og}^{1} p_{gt} + C_{og}^{0} y_{gt} && (4) \\
+& \sum_{g \in \mathcal{G}_i} p_{gt} + p_{it}^{\text{Unmet}} + \!\!\sum_{(j,i)\in\mathcal{L}}\!\! f_{jit} - \!\!\sum_{(i,j)\in\mathcal{L}}\!\! f_{ijt} = \bar{D}_{it} && (5) \\
+& f_{ijt} = B_{ij}(\theta_{it} - \theta_{jt}) && (6) \\
+& v_{gt} - w_{gt} = y_{gt} - y_{g,t-1} && (7) \\
+& p_{gt} \leq P_g^{\max} y_{gt} && (8) \\
+& p_{gt} - p_{g,t-1} \leq M_g y_{g,t-1} + P_g^{\min} v_{gt} && (9) \\
+& \hat{V}(\mathbf{y}) = \max_{\boldsymbol{\omega}\in\Omega}\frac{1}{N^{\text{tp}}}\sum_{t \in \mathcal{T}^{\text{RT}}}\sum_{i \in \mathcal{N}} \lambda_{it}(\mathbf{y},\boldsymbol{\omega})(d_{it}^{\text{RT}}-\bar{D}_{it})^{+}
+\end{aligned}
+              </span>
+            </aside>
           </li>
         </ol>
       </div>
@@ -182,6 +256,17 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".formula").forEach(function (el) {
+        try {
+          const display = el.dataset.display === "true";
+          katex.render(el.textContent.trim(), el, { throwOnError: false, displayMode: display });
+        } catch (e) {}
+      });
+    });
+  </script>
   <script src="script.js"></script>
 </body>
 </html>

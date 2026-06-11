@@ -470,6 +470,10 @@ body::before {
 }
 .paper {
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr minmax(160px, 220px);
+  gap: 28px;
+  align-items: center;
   padding: 32px 28px 36px;
   border-bottom: 1px solid var(--rule);
   transition: background 0.4s ease;
@@ -477,21 +481,173 @@ body::before {
 .paper:hover {
   background: linear-gradient(90deg, rgba(20, 184, 166, 0.08) 0%, transparent 60%);
 }
+.paper-aside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 14px;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  text-align: center;
+  min-height: 78px;
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.4;
+  overflow: hidden;
+}
+.paper-aside .katex {
+  font-size: 0.9em;
+  white-space: normal;
+}
+.paper-aside--image {
+  padding: 8px;
+  min-height: 0;
+}
+.paper-aside--image img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
+  display: block;
+  border-radius: 3px;
+}
+
+/* Table-style aside — for papers with a comparison snapshot */
+.paper-aside--table {
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  padding: 14px 16px;
+  min-height: 0;
+  text-align: left;
+  overflow: hidden;
+}
+.paper-aside--table .aside-caption {
+  margin: 0 0 8px;
+}
+.aside-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+  line-height: 1.5;
+}
+.aside-table th {
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 9.5px;
+  color: var(--muted);
+  padding: 6px 10px 6px 0;
+  border-bottom: 1px solid var(--rule);
+  white-space: nowrap;
+}
+.aside-table th:last-child { padding-right: 0; }
+.aside-table td {
+  padding: 8px 10px 8px 0;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: middle;
+  color: var(--ink-soft);
+  line-height: 1.35;
+}
+.aside-table th:first-child,
+.aside-table td:first-child {
+  width: 58%;
+  word-break: break-word;
+}
+.aside-table td:last-child { padding-right: 0; }
+.aside-table tbody tr:last-child td { border-bottom: 0; }
+.aside-table tr.this-paper td {
+  background: rgba(20, 184, 166, 0.1);
+  color: var(--ink);
+}
+.aside-table tr.this-paper td:first-child {
+  font-weight: 600;
+  border-left: 2px solid var(--accent);
+  padding-left: 8px;
+}
+.aside-table .katex {
+  font-size: 0.82em;
+  white-space: nowrap;
+}
+
+/* Larger right column + image — for papers with a figure snapshot */
+.paper.paper--with-image {
+  grid-template-columns: minmax(260px, 1fr) minmax(320px, 380px);
+  align-items: center;
+}
+.paper.paper--with-image .paper-aside--image {
+  padding: 10px;
+}
+.paper.paper--with-image .paper-aside--image img {
+  max-height: 320px;
+}
+@media (max-width: 880px) {
+  .paper.paper--with-image { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px) {
+  .paper { grid-template-columns: 1fr; gap: 16px; }
+  .paper-aside { padding: 12px; min-height: 0; }
+}
+
+/* Wider equation panel on the right — for papers with a full multi-line formula */
+.paper.paper--full-eq {
+  grid-template-columns: minmax(260px, 1fr) minmax(380px, 1.4fr);
+  align-items: start;
+}
+.paper.paper--full-eq .paper-aside {
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 18px 20px 20px;
+  min-height: 0;
+  text-align: left;
+  overflow: hidden;
+}
+.paper.paper--full-eq .paper-aside .katex-display {
+  margin: 0;
+  text-align: left;
+}
+.paper.paper--full-eq .paper-aside .katex-display > .katex {
+  text-align: left;
+  font-size: 0.78em;
+}
+.aside-caption {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 10px;
+  white-space: nowrap;
+}
+.caption-keep-case {
+  text-transform: none;
+}
+@media (max-width: 880px) {
+  .paper.paper--full-eq { grid-template-columns: 1fr; }
+}
 .paper-line {
   display: flex;
-  gap: 18px;
-  margin-bottom: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--muted);
 }
-.paper-year { color: var(--ink); }
-.paper-venue { color: var(--muted); }
-.paper.featured .paper-venue::after {
-  content: " · Featured";
-  color: var(--accent);
+.paper-year {
+  color: var(--muted);
+  font-weight: 600;
+}
+.paper-venue {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--ink);
 }
 .paper-award {
   display: inline-flex;
